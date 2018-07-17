@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <manifest>
+  <default revision="oreo"
+           remote="simplix-dot" />
+
+  <remote  name="simplix-dot"
+           fetch="https://github.com/Simplix-Dot/" />
+
+  <!-- Crowdin -->
+  <project name="crowdin" path="crowdin" remote="simplix-dot" revision="master" />
+
+  <!-- Frameworks -->
+  <project name="frameworks_base" path="frameworks/base" remote="simplix-dot" />
+
+  <!-- Manifest -->
+  <project name="manifest" path="manifest" remote="simplix-dot" />
+
+  <!-- Apps -->
+  <project name="packages_apps_Settings" path="packages/apps/Settings" remote="simplix-dot" />
+  <project name="packages_apps_Galaxy" path="packages/apps/Galaxy" remote="simplix-dot" />
+
+</manifest>

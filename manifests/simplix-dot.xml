@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- Simplix-Dot -->
+  <project path="manifest" name="platform_manifest" remote="simplix-dot" />
+  <project path="bionic" name="platform_bionic" remote="cosmic-os" />
+  <project path="bootable/recovery" name="platform_bootable_recovery" remote="cosmic-os" />
+  <project path="build/make" name="platform_build" remote="simplix-dot" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="platform_build_soong" remote="simplix-dot" >
+    <linkfile src="root.bp" dest="Android.bp" /> 
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" /> 
+  </project>
+
+  <project path="device/cosmic/sepolicy" name="device_cosmic_sepolicy" remote="cosmic-os" />
+  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="cosmic-os" />
+
+  <project path="external/DUtils" name="platform_external_DUtils" remote="simplix-dot" />
+  <project path="external/selinux" name="platform_external_selinux" remote="cosmic-os" />
+  <project path="external/tinycompress" name="platform_external_tinycompress" remote="cosmic-os" />
+ 
+  <project path="frameworks/av" name="platform_frameworks_av" remote="simplix-dot" />
+  <project path="frameworks/base" name="platform_frameworks_base" remote="simplix-dot" />
+  <project path="frameworks/native" name="platform_frameworks_native" remote="cosmic-os" />
+  <project path="frameworks/opt/net/ims" name="platform_frameworks_opt_net_ims" groups="pdk" remote="cosmic-os" />
+  <project path="frameworks/opt/net/wifi" name="platform_frameworks_opt_net_wifi" remote="cosmic-os" />
+  <project path="frameworks/opt/telephony" name="platform_frameworks_opt_telephony" remote="cosmic-os" />
+  <project path="frameworks/opt/datetimepicker" name="platform_frameworks_opt_datetimepicker" remote="cosmic-os" />
+  <project path="frameworks/support" name="platform_frameworks_support" remote="cosmic-os" />
+
+  <project path="hardware/cosmic/interfaces" name="platform_hardware_cosmic_interfaces" remote="cosmic-os" >
+    <copyfile dest="hardware/cosmic/Android.bp" src="Android.bp"/>
+  </project>
+
+
+  <project path="hardware/interfaces" name="platform_hardware_interfaces" remote="cosmic-os" />
+  <project path="hardware/libhardware" name="platform_hardware_libhardware" remote="cosmic-os" />
+  <project path="hardware/libhardware_legacy" name="platform_hardware_libhardware_legacy" remote="cosmic-os" />
+  <project path="hardware/qcom/bootctrl" name="platform_hardware_qcom_bootctrl" remote="cosmic-os" />
+  <project path="hardware/qcom/gps" name="platform_hardware_qcom_gps" remote="cosmic-os" />
+  <project path="hardware/ril" name="platform_hardware_ril" remote="cosmic-os" />
+
+  <project path="packages/apps/Bluetooth" name="platform_packages_apps_Bluetooth" groups="pdk-fs" remote="cosmic-os" />
+  <project path="packages/apps/ExactCalculator" name="platform_packages_apps_Calculator" groups="pdk-fs" remote="cosmic-os" />
+  <project path="packages/apps/Calendar" name="platform_packages_apps_Calendar" groups="pdk-fs" remote="cosmic-os" />
+  <project path="packages/apps/Camera2" name="platform_packages_apps_Camera2" groups="pdk-fs" remote="cosmic-os" />
+  <project path="packages/apps/Contacts" name="platform_packages_apps_Contacts" groups="pdk-fs" remote="cosmic-os" />
+  <project path="packages/apps/DUI" name="platform_packages_apps_DUI" groups="pdk-fs" remote="cosmic-os" />
+  <project path="packages/apps/DeskClock" name="platform_packages_apps_DeskClock" groups="pdk-fs" remote="cosmic-os" />
+  <project path="packages/apps/Dialer" name="platform_packages_apps_Dialer" groups="pdk-fs" remote="cosmic-os" />
+  <project path="packages/apps/DocumentsUI" name="platform_packages_apps_DocumentsUI" groups="pdk-fs" remote="cosmic-os" />
+  <project path="packages/apps/Email" name="platform_packages_apps_Email" groups="pdk-fs" remote="cosmic-os" />
+  <project path="packages/apps/Galaxy" name="platform_packages_apps_simplix-dot_gear" groups="pdk-fs" remote="simplix-dot" />
+  <project path="packages/apps/Gallery2" name="platform_packages_apps_Gallery2" groups="pdk-fs" remote="cosmic-os" />
+  <project path="packages/apps/Messaging" name="platform_packages_apps_Messaging" groups="pdk-fs" remote="cosmic-os" />
+  <project path="packages/apps/Nfc" name="platform_packages_apps_Nfc" groups="pdk-fs" remote="cosmic-os" />
+  <project path="packages/apps/PackageInstaller" name="platform_packages_apps_PackageInstaller" groups="pdk-fs" remote="cosmic-os" />
+  <project path="packages/apps/PhoneCommon" name="platform_packages_apps_PhoneCommon" groups="pdk-cw-fs,pdk-fs" remote="cosmic-os" />
+  <project path="packages/apps/Recorder" name="platform_packages_apps_Recorder" groups="pdk-fs" remote="cosmic-os" />
+  <project path="packages/apps/Settings" name="platform_packages_apps_Settings" groups="pdk-fs" remote="simplix-dot" />
+  <project path="packages/apps/Stk" name="platform_packages_apps_Stk" groups="pdk-fs" remote="cosmic-os" />
+  <project path="packages/apps/UnifiedEmail" name="platform_packages_apps_UnifiedEmail" groups="pdk-fs" remote="cosmic-os" />
+  <project path="packages/inputmethods/LatinIME" name="platform_packages_inputmethods_LatinIME" groups="pdk-fs" remote="cosmic-os" />
+  <project path="packages/providers/DownloadProvider" name="platform_packages_providers_DownloadProvider" groups="pdk-cw-fs,pdk-fs" remote="cosmic-os" />
+  <project path="packages/providers/MediaProvider" name="platform_packages_providers_MediaProvider" groups="pdk-cw-fs,pdk-fs" remote="cosmic-os" />
+  <project path="packages/services/OmniJaws" name="platform_packages_services_OmniJaws" groups="pdk-cw-fs,pdk-fs" remote="cosmic-os" />
+  <project path="packages/services/Telecomm" name="platform_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="cosmic-os" />
+  <project path="packages/services/Telephony" name="platform_packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="cosmic-os" />
+
+  <project path="system/bt" name="platform_system_bt" remote="cosmic-os" />
+  <project path="system/core" name="platform_system_core" remote="simplix-dot" />
+  <project path="system/media" name="platform_system_media" remote="cosmic-os" />
+  <project path="system/nfc" name="platform_system_nfc" remote="cosmic-os" />
+  <project path="system/qcom" name="platform_system_qcom" remote="cosmic-os" />
+  <project path="system/sepolicy" name="platform_system_sepolicy" remote="cosmic-os" />
+  <project path="system/tools/hidl" name="platform_system_tools_hidl" remote="cosmic-os" />
+  <project path="system/vold" name="platform_system_vold" remote="cosmic-os" />
+
+  <project path="vendor/cos" name="platform_vendor_cos" remote="simplix-dot" >
+  <copyfile dest="build-simplix.sh" src="build-simplix.sh"/>
+  </project>
+  <project path="vendor/ota" name="platform_vendor_ota" remote="simplix-dot" />
+  <project path="vendor/codeaurora/telephony" name="platform_vendor_codeaurora_telephony"  remote="cosmic-os" />  
+
+</manifest>
