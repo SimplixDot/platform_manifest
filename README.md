@@ -27,7 +27,7 @@ Building the ROM
 
 CosmicOS (on which our ROM is based) comes with a handy script for building the system. You can use it just by typing this from your work folder:
 
-    . build-simplix.sh
+    . build-simplix.sh <your device codename>
     
 or you can manually build by doing:
 
