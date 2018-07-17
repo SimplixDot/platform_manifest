@@ -13,7 +13,7 @@ Downloading the source
 
 You can download the source by simply doing:
 
-    repo init -u https://github.com/Simplix-Dot/platform_manifest.git -b oreo
+    repo init -u https://github.com/SimplixDot/platform_manifest.git -b oreo
     repo sync --no-tags --no-clone-bundle --force-sync -c
     
 On multithread CPUs (which you probably have, considering you would like to build Android :P) you can set multiple sync jobs by doing:
