@@ -5,7 +5,7 @@
           fetch="https://github.com/" />
 
   <remote name="simplix-dot"
-  		  fetch="https://github.com/Simplix-Dot"
+  		  fetch="https://github.com/SimplixDot"
   		  revision="refs/heads/oreo" />
 
   <remote name="cosmic-os"
