@@ -86,7 +86,7 @@
   <project path="vendor/cos" name="platform_vendor_cos" remote="simplix-dot" >
   <copyfile dest="build-simplix.sh" src="build-simplix.sh"/>
   </project>
-  <project path="vendor/ota" name="platform_vendor_ota" remote="cosmic-os" />
+  <project path="vendor/ota" name="platform_vendor_ota" remote="simplix-dot" />
   <project path="vendor/codeaurora/telephony" name="platform_vendor_codeaurora_telephony"  remote="cosmic-os" />  
 
 </manifest>
