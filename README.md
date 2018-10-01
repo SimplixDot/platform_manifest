@@ -1,41 +1,44 @@
-<img src="https://raw.githubusercontent.com/Cosmic-OS/platform_packages_apps_Settings/pulsar-release/res/drawable/cos_about_logo.png"> 
+Simplix Blue
+============
 
-Cosmic-OS
-=========
+Get started
+-----------
 
-Credits 
--------
- * [**LineageOS/Cyanogenmod**](https://github.com/LineageOS)
- * [**PixelExperience**](https://github.com/PixelExperience/)
+Before trying to build the ROM yourself, make sure you have established your building environment.
 
-Getting Started 
---------------- 
-To get started with the Cosmic-OS sources, you'll need to get 
-familiar with [Git and Repo](http://source.android.com/source/version-control.html). 
+For more info on how to do exactly that, check [AOSP's official documentation](https://source.android.com/setup/build/initializing).
 
-Initialize the Repositories 
----------------------------
+Downloading the source
+----------------------
 
-    repo init -u https://github.com/Cosmic-OS/platform_manifest.git -b corona-release
+You can download the source by simply doing:
+
+    repo init -u https://github.com/SimplixDot/platform_manifest.git -b pie
     repo sync --no-tags --no-clone-bundle --force-sync -c
+    
+On multithread CPUs (which you probably have, considering you would like to build Android :P) you can set multiple sync jobs by doing:
 
- -j# -Set jobs by just replacing # with what you wish
+    repo sync --no-tags --no-clone-bundle --force-sync -c -jX
 
-This will initialize the new repository and begin the initial sync. This can take a while!
+where X is the count of your CPU threads.
 
-Building the System 
--------------------
- Initialize the ROM environment with the envsetup.sh script. By entering command (i).
+Building the ROM
+----------------
 
-    . build-cos.sh #device
+CosmicOS (on which our ROM is based) comes with a handy script for building the system. You can use it just by typing this from your work folder:
 
- Just replace #device with your device name 
+    . build-simplix.sh <your device codename>
+    
+or you can manually build by doing:
 
- EG 
-    . build-cos.sh berkeley
-
- OR
-
-     . build/envsetup.sh
-     lunch cos_<device>-userdebug
-     brunch <device>
+    . build/envsetup.sh
+    lunch simplix_<your device codename>-userdebug
+    brunch <device>
+    
+Credits
+-------
+ * [**Cosmic OS**](https://github.com/Cosmic-OS)
+ * [**Lineage OS**](https://github.com/LineageOS)
+ * [**Pixel Experience**](https://github.com/PixelExperience)
+ 
+ 

@@ -106,7 +106,7 @@
   <remove-project name="platform/hardware/ril" />
 
   <!-- Packages repos -->
-  <remove-project name="platform/packages/apps/Bluetooth" />
+  <!--<remove-project name="platform/packages/apps/Bluetooth" />-->
   <remove-project name="platform/packages/apps/Browser2" />
   <remove-project name="platform/packages/apps/Calendar" />
   <remove-project name="platform/packages/apps/Camera2" />
@@ -153,6 +153,7 @@
   <remove-project name="platform/system/core" />
   <remove-project name="platform/system/extras" />
   <remove-project name="platform/system/security" />
+  <remove-project name="platform/system/sepolicy" />
   <remove-project name="platform/system/vold" />
 
 </manifest>
