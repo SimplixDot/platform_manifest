@@ -706,7 +706,7 @@
   <include name="manifests/remove.xml" />
 
   <!-- Simplix Additions -->
-  <include name="manifests/.xml" />
+  <include name="manifests/simplix.xml" />
   <include name="manifests/lineage.xml" />
 
 </manifest>
