@@ -705,7 +705,7 @@
   <!-- Remove unused AOSP repos -->
   <include name="manifests/remove.xml" />
 
-  <!-- Cosmic-OS Additions -->
+  <!-- Simplix Additions -->
   <include name="manifests/simplix.xml" />
   <include name="manifests/lineage.xml" />
 

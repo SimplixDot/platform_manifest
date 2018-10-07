@@ -1,5 +1,6 @@
-Simplix Blue
-============
+<p align="center">
+    <img src="https://img.xda-cdn.com/7o7Id5HtrJgXhi02dSc38NpUZr0=/https%3A%2F%2Fi.imgur.com%2FMy52Bu0.png" />
+</p>
 
 Get started
 -----------
