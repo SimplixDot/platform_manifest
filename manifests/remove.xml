@@ -149,7 +149,7 @@
   <remove-project name="platform/prebuilts/build-tools" />
 
   <!-- System repos -->
-  <!--<remove-project name="platform/system/bt" />-->
+  <remove-project name="platform/system/bt" />
   <remove-project name="platform/system/core" />
   <remove-project name="platform/system/extras" />
   <remove-project name="platform/system/security" />
