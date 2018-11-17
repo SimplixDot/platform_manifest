@@ -76,7 +76,7 @@
 
   <!-- General repos -->
   <project path="art" name="platform_art" remote="cosmic-os" />
-  <project path="bionic" name="platform_bionic" remote="cosmic-os" />
+  <project path="bionic" name="platform_bionic" remote="simplix" />
   <project path="build/make" name="platform_build" remote="simplix">
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
